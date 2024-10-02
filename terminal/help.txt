@@ -1,0 +1,6 @@
+help - shows this menu
+version - returns the version of the terminal
+list - lists the files of the current directory
+time - returns the current time
+date - returns the current date
+exit - quits the terminal
