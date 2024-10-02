@@ -1,0 +1,1 @@
+print("True" if (a := input("Enter a String: ").lower()) == a[::-1] else "False") 
