@@ -1,0 +1,108 @@
+def length_conversion():
+    print("\nLength Conversion:")
+    print("1. Meters to Kilometers")
+    print("2. Kilometers to Miles")
+    print("3. Miles to Feet")
+    print("4. Feet to Meters")
+    choice = int(input("Choose a conversion option: "))
+
+    value = float(input("Enter the value to convert: "))
+
+    if choice == 1:
+        print(f"{value} meters = {value / 1000} kilometers")
+    elif choice == 2:
+        print(f"{value} kilometers = {value * 0.621371} miles")
+    elif choice == 3:
+        print(f"{value} miles = {value * 5280} feet")
+    elif choice == 4:
+        print(f"{value} feet = {value / 3.281} meters")
+    else:
+        print("Invalid option.")
+
+def weight_conversion():
+    print("\nWeight Conversion:")
+    print("1. Grams to Kilograms")
+    print("2. Kilograms to Pounds")
+    print("3. Pounds to Ounces")
+    print("4. Ounces to Grams")
+    choice = int(input("Choose a conversion option: "))
+
+    value = float(input("Enter the value to convert: "))
+
+    if choice == 1:
+        print(f"{value} grams = {value / 1000} kilograms")
+    elif choice == 2:
+        print(f"{value} kilograms = {value * 2.20462} pounds")
+    elif choice == 3:
+        print(f"{value} pounds = {value * 16} ounces")
+    elif choice == 4:
+        print(f"{value} ounces = {value * 28.3495} grams")
+    else:
+        print("Invalid option.")
+
+def temperature_conversion():
+    print("\nTemperature Conversion:")
+    print("1. Celsius to Fahrenheit")
+    print("2. Fahrenheit to Celsius")
+    print("3. Celsius to Kelvin")
+    print("4. Kelvin to Celsius")
+    choice = int(input("Choose a conversion option: "))
+
+    value = float(input("Enter the value to convert: "))
+
+    if choice == 1:
+        print(f"{value} Celsius = {(value * 9/5) + 32} Fahrenheit")
+    elif choice == 2:
+        print(f"{value} Fahrenheit = {(value - 32) * 5/9} Celsius")
+    elif choice == 3:
+        print(f"{value} Celsius = {value + 273.15} Kelvin")
+    elif choice == 4:
+        print(f"{value} Kelvin = {value - 273.15} Celsius")
+    else:
+        print("Invalid option.")
+
+def volume_conversion():
+    print("\nVolume Conversion:")
+    print("1. Liters to Milliliters")
+    print("2. Milliliters to Gallons")
+    print("3. Gallons to Liters")
+    choice = int(input("Choose a conversion option: "))
+
+    value = float(input("Enter the value to convert: "))
+
+    if choice == 1:
+        print(f"{value} liters = {value * 1000} milliliters")
+    elif choice == 2:
+        print(f"{value} milliliters = {value / 3785.41} gallons")
+    elif choice == 3:
+        print(f"{value} gallons = {value * 3.78541} liters")
+    else:
+        print("Invalid option.")
+
+def main():
+    while True:
+        print("\nUnit Converter")
+        print("1. Length Conversion")
+        print("2. Weight Conversion")
+        print("3. Temperature Conversion")
+        print("4. Volume Conversion")
+        print("5. Exit")
+        
+        choice = int(input("Choose a conversion type: "))
+
+        if choice == 1:
+            length_conversion()
+        elif choice == 2:
+            weight_conversion()
+        elif choice == 3:
+            temperature_conversion()
+        elif choice == 4:
+            volume_conversion()
+        elif choice == 5:
+            print("Exiting Unit Converter. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
